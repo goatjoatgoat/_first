@@ -1,0 +1,124 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(13, 17, 23, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #21262d;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.logoIcon {
+  font-size: 22px;
+  font-weight: 700;
+  color: #58a6ff;
+  font-family: 'Courier New', monospace;
+}
+
+.logoText {
+  font-size: 18px;
+  font-weight: 700;
+  color: #e6edf3;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.nav a {
+  font-size: 14px;
+  color: #8b949e;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #e6edf3;
+}
+
+.searchBox {
+  flex: 1;
+  display: flex;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 480px;
+}
+
+.searchBox input {
+  flex: 1;
+  padding: 8px 14px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e6edf3;
+  font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.searchBox input::placeholder {
+  color: #484f58;
+}
+
+.searchBtn {
+  padding: 8px 14px;
+  color: #8b949e;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.searchBtn:hover {
+  color: #58a6ff;
+}
+
+.authButtons {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.loginBtn {
+  padding: 7px 16px;
+  font-size: 14px;
+  color: #8b949e;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.loginBtn:hover {
+  color: #e6edf3;
+  border-color: #8b949e;
+}
+
+.signupBtn {
+  padding: 7px 16px;
+  font-size: 14px;
+  color: #0d1117;
+  background-color: #58a6ff;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.signupBtn:hover {
+  background-color: #79b8ff;
+}

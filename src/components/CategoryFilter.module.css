@@ -1,0 +1,41 @@
+.wrapper {
+  border-bottom: 1px solid #21262d;
+  background-color: #0d1117;
+  position: sticky;
+  top: 64px;
+  z-index: 90;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.inner::-webkit-scrollbar {
+  display: none;
+}
+
+.btn {
+  padding: 14px 18px;
+  font-size: 14px;
+  color: #8b949e;
+  font-family: 'Noto Sans KR', sans-serif;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  color: #e6edf3;
+}
+
+.active {
+  color: #58a6ff;
+  border-bottom-color: #58a6ff;
+  font-weight: 600;
+}
