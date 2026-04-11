@@ -1,0 +1,151 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logoIcon {
+  background: #1a73e8;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 7px;
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+.logoText {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: -0.5px;
+}
+
+.nav {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.navLink {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  background: #f1f3f5;
+  color: #1a73e8;
+}
+
+.searchWrap {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+  border: 1.5px solid #e9ecef;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.searchWrap:focus-within {
+  border-color: #1a73e8;
+  background: #fff;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: #adb5bd;
+}
+
+.searchBtn {
+  background: none;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  color: #868e96;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s;
+}
+
+.searchBtn:hover {
+  color: #1a73e8;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.btnOutline {
+  padding: 7px 16px;
+  border: 1.5px solid #1a73e8;
+  border-radius: 6px;
+  background: transparent;
+  color: #1a73e8;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.btnOutline:hover {
+  background: #e8f0fe;
+}
+
+.btnFill {
+  padding: 7px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.btnFill:hover {
+  background: #1557b0;
+}

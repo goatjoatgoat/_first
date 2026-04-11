@@ -1,0 +1,40 @@
+.wrap {
+  border-bottom: 1px solid #e9ecef;
+  background: #fff;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.inner::-webkit-scrollbar { display: none; }
+
+.btn {
+  padding: 14px 18px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+  margin-bottom: -1px;
+}
+
+.btn:hover {
+  color: #1a73e8;
+}
+
+.btn.active {
+  color: #1a73e8;
+  font-weight: 700;
+  border-bottom-color: #1a73e8;
+}
