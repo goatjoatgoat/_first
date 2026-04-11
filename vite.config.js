@@ -6,8 +6,8 @@ export default defineConfig({
   server: {
     port: 5173,
     // 백엔드 연결 시 아래 proxy 설정 사용
-    // proxy: {
-    //   '/api': 'http://localhost:3000'
-    // }
+    proxy: {
+       '/api': 'http://localhost:3000'
+    }
   }
 })

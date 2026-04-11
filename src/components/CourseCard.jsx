@@ -1,18 +1,17 @@
 import styles from './CourseCard.module.css'
 
-export default function CourseCard({ course }) {
-  const { title, instructor, price, rating, reviewCount, level, tags } = course
+export default function CourseCard({ course, onClick }) {
+  const { title, instructor, price, rating, review_count, level, tags } = course
 
   const levelColor = {
     입문: '#3fb950',
     중급: '#58a6ff',
     고급: '#f78166',
     실전: '#ffa657',
-    무료: '#bc8cff',
   }
 
   return (
-    <div className={styles.card}>
+    <div className={styles.card} onClick={onClick}>
       <div className={styles.thumbnail}>
         <div className={styles.thumbnailPlaceholder}>
           <span className={styles.codeSnippet}>{'<C/>'}</span>
@@ -39,7 +38,7 @@ export default function CourseCard({ course }) {
           <div className={styles.rating}>
             <span className={styles.star}>★</span>
             <span className={styles.ratingNum}>{rating}</span>
-            <span className={styles.reviewCount}>({reviewCount.toLocaleString()})</span>
+            <span className={styles.reviewCount}>({(review_count ?? 0).toLocaleString()})</span>
           </div>
           <span className={styles.price}>
             {price === 0 ? '무료' : `₩${price.toLocaleString()}`}

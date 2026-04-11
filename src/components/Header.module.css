@@ -122,3 +122,24 @@
 .signupBtn:hover {
   background-color: #79b8ff;
 }
+
+.activeNav {
+  color: #e6edf3 !important;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.userEmail {
+  font-size: 13px;
+  color: #58a6ff;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nav a {
+  cursor: pointer;
+}
