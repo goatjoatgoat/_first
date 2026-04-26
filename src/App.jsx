@@ -5,6 +5,7 @@ import Banner from './components/Banner'
 import CategoryFilter from './components/CategoryFilter'
 import CourseGrid from './components/CourseGrid'
 import AuthModal from './components/AuthModal'
+import AccountModal from './components/AccountModal'
 import VideoPage from './pages/VideoPage'
 import ProblemsPage from './pages/ProblemsPage'
 
@@ -13,6 +14,7 @@ export default function App() {
   const [page, setPage] = useState('home')
   const [selectedCourse, setSelectedCourse] = useState(null)
   const [showAuthModal, setShowAuthModal] = useState(false)
+  const [showAccountModal, setShowAccountModal] = useState(false)
 
   const goHome = () => setPage('home')
   const goProblems = () => setPage('problems')
@@ -28,6 +30,7 @@ export default function App() {
         onGoHome={goHome}
         onGoProblems={goProblems}
         onShowAuth={() => setShowAuthModal(true)}
+        onShowAccount={() => setShowAccountModal(true)}
       />
 
       {page === 'home' && (
@@ -49,6 +52,7 @@ export default function App() {
       {page === 'problems' && <ProblemsPage />}
 
       {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
+      {showAccountModal && <AccountModal onClose={() => setShowAccountModal(false)} />}
     </AuthProvider>
   )
 }

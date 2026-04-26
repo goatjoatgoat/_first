@@ -1,7 +1,7 @@
 import { useAuth } from '../context/AuthContext'
 import styles from './Header.module.css'
 
-export default function Header({ page, onGoHome, onGoProblems, onShowAuth }) {
+export default function Header({ page, onGoHome, onGoProblems, onShowAuth, onShowAccount }) {
   const { user, signOut } = useAuth()
 
   return (
@@ -26,7 +26,7 @@ export default function Header({ page, onGoHome, onGoProblems, onShowAuth }) {
         <div className={styles.authButtons}>
           {user ? (
             <>
-              <span className={styles.userEmail}>{user.email}</span>
+              <button className={styles.accountBtn} onClick={onShowAccount}>계정 정보</button>
               <button className={styles.loginBtn} onClick={signOut}>로그아웃</button>
             </>
           ) : (
